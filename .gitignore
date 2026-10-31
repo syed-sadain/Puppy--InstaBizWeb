@@ -9,6 +9,9 @@ npm-debug.log*
 .env
 .env.local
 
+# Generated origin cache (rebuilt on demand by scripts/server.mjs)
+.cache/
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db

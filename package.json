@@ -2,11 +2,11 @@
   "name": "teddypups-instabizweb",
   "version": "1.0.0",
   "private": true,
-  "description": "TeddyPups U.A.E. puppy website with a zero-dependency local static server and self-healing origin cache.",
+  "description": "TeddyPups U.A.E. - static site mirror of puppy.instabizweb.com, with a zero-dependency local server and self-healing origin cache.",
   "type": "module",
   "scripts": {
-    "start": "node server.mjs",
-    "precache": "node precache.mjs"
+    "start": "node scripts/server.mjs",
+    "precache": "node scripts/precache.mjs"
   },
   "engines": {
     "node": ">=18"

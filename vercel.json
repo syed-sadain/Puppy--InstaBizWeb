@@ -1,5 +1,5 @@
 {
-  "outputDirectory": "puppy.instabizweb.com",
+  "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": false
 }

@@ -1,5 +1,5 @@
 [build]
-  publish = "puppy.instabizweb.com"
+  publish = "public"
 
 # Next.js image optimizer: static hosts ignore the ?url= query string, so proxy
 # this endpoint to the live origin which generates the real optimized images.
