@@ -1,0 +1,20 @@
+[build]
+  publish = "puppy.instabizweb.com"
+
+# Next.js image optimizer: static hosts ignore the ?url= query string, so proxy
+# this endpoint to the live origin which generates the real optimized images.
+[[redirects]]
+  from = "/_next/image"
+  to = "https://puppy.instabizweb.com/_next/image"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
