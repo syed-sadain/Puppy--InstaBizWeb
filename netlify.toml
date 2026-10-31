@@ -9,6 +9,15 @@
   status = 200
   force = true
 
+# Self-healing fallback: any path without a static file (e.g. puppy detail pages
+# like /puppies/<slug>) is proxied to the live origin, mirroring the local
+# server's behaviour. Static files always take precedence (no `force`), so the
+# mirrored pages keep being served from Netlify's CDN.
+[[redirects]]
+  from = "/*"
+  to = "https://puppy.instabizweb.com/:splat"
+  status = 200
+
 [[headers]]
   for = "/_next/static/*"
   [headers.values]
