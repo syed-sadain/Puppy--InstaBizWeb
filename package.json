@@ -1,0 +1,15 @@
+{
+  "name": "teddypups-instabizweb",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TeddyPups U.A.E. puppy website with a zero-dependency local static server and self-healing origin cache.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "precache": "node precache.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
